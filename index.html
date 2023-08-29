@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Loca Carros</h1>
+    </header>
+    <main>
+        <div class ="title">
+            <h2>CARROS</h2>
+            <spam>Lista de carros</spam>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label>Carro</label>
+                <input type="text" id="carro" placeholder ="Nome do carro">
+            </div>
+
+            <div class="lineInput">
+                <label>Modelo</label>
+                <input type="text" id="modelo" placeholder ="Modelo do carro">
+            </div>
+
+            <div class="lineInput">
+                <label>Ano</label>
+                <input type="text" id="ano" placeholder ="Ano do carro">
+            </div>
+       
+            <button onclick="carro.adicionar()">Adicionar</button>
+            <button onclick="carro.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table bolder="1">
+                <thead>
+                    <th>Carro</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td></td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>
